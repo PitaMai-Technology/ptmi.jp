@@ -114,7 +114,7 @@ const initial = computed(() => props.name.trim().charAt(0).toUpperCase())
   &__initial {
     @apply text-5xl font-bold text-secondary;
 
-    font-family: var(--font-serif);
+    font-family: var(--font-main);
   }
 
   &__content {
@@ -132,7 +132,7 @@ const initial = computed(() => props.name.trim().charAt(0).toUpperCase())
   &__name {
     @apply m-0 p-0 border-0 font-bold leading-tight tracking-[0.02em];
 
-    font-family: var(--font-serif);
+    font-family: var(--font-main);
     font-size: clamp(1.6rem, 4vw, 2.35rem);
 
     &::before,

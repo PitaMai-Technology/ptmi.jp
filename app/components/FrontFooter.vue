@@ -140,7 +140,7 @@ const currentYear = new Date().getFullYear()
 .footer-brand {
   @apply inline-flex items-center gap-4 text-4xl font-bold tracking-[0.03em];
 
-  font-family: var(--font-serif);
+  font-family: var(--font-main);
 
   img {
     @apply h-18 w-18;

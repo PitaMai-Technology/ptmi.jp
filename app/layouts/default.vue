@@ -4,13 +4,29 @@ const isCookieSettingsOpen = ref(false)
 
 <template>
   <div id="top">
-    <BaseSticky v-slot="{ stickyClass, stickyStyle }" :breakpoint="1024" top="0rem">
-      <FrontHeader :class="[stickyClass, 'z-50']" :style="stickyStyle" />
-    </BaseSticky>
-    <slot />
-    <FrontFooter @open-cookie-settings="isCookieSettingsOpen = true" />
-    <BaseSticky v-slot="{ stickyClass, stickyStyle }" breakpoint="0" top="0rem">
+    <div class="site-layout bg-bgPage">
+      <FrontHeader />
+      <div class="site-main">
+        <slot />
+        <FrontFooter @open-cookie-settings="isCookieSettingsOpen = true" />
+      </div>
+    </div>
+    <BaseSticky v-slot="{ stickyClass, stickyStyle }" :breakpoint="0" top="0rem">
       <CookieConsentBanner :class="[stickyClass, 'z-60']" v-model:open="isCookieSettingsOpen" :style="stickyStyle" />
     </BaseSticky>
   </div>
 </template>
+
+<style scoped>
+.site-main {
+  min-width: 0;
+}
+
+@media (min-width: 1024px) {
+  .site-layout {
+    display: grid;
+    grid-template-columns: 18rem minmax(0, 1fr);
+    align-items: start;
+  }
+}
+</style>

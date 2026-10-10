@@ -29,8 +29,8 @@ watch(isDesktop, (value) => {
   <aside class="site-header">
     <div class="header-inner mx-auto flex py-4 max-w-6xl max-lg:flex-row-reverse items-center justify-between px-6">
       <NuxtLink class="site-name" to="/">
-        <NuxtImg src="/logo.svg" alt="eita.vue" class="h-14 w-14" />
-        <span class="text-sm text-neutral-700">eita.vue</span>
+        <NuxtImg src="/logo.svg" alt="PitaMai Technology" class="h-14 w-14" />
+        <span class="text-sm text-neutral-700">PitaMai Technology</span>
       </NuxtLink>
 
       <DialogRoot v-if="!isDesktop" v-model:open="isOpen">

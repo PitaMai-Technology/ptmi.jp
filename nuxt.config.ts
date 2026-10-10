@@ -8,7 +8,6 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxt/icon',
     '@nuxt/image',
-    '@nuxthub/core',
     '@vueuse/nuxt',
     'nuxt-studio',
     '@nuxt/scripts',
@@ -24,7 +23,7 @@ export default defineNuxtConfig({
   scripts: {
     registry: {
       googleAnalytics: {
-        id: 'G-S9NJLGHKTC',
+        id: 'G-***',
         trigger: 'onNuxtReady',
         defaultConsent: {
           ad_storage: 'denied',
@@ -52,20 +51,6 @@ export default defineNuxtConfig({
       repo: 'my-site',
       branch: 'main',
     },
-    media: {
-      external: true,
-      prefix: 'content',
-      publicUrl: process.env.NUXT_PUBLIC_STUDIO_MEDIA_PUBLIC_URL ?? 'https://r2.eita.ptmi.jp',
-      allowedTypes: [
-        'image/*',
-        'video/*',
-        'audio/*',
-        'application/pdf',
-      ],
-    },
-  },
-  hub: {
-    blob: true,
   },
   content: {
     build: {

@@ -1,82 +1,55 @@
 <template>
-  <section class="top-hero">
-    <div class="hero-background" aria-hidden="true">
-      <NuxtImg class="hero-image" src="/IMG_3416.JPG" alt="" format="webp" quality="82" />
-    </div>
+  <BaseContainer>
+    <div class="grid grid-cols-1 lg:grid-cols-2
+             items-center gap-10 py-8 lg:py-14">
+      <div class="space-y-6">
+        <p class="text-sm font-medium tracking-wider
+                 text-secondary">
+          PitaMai Technology／ピタマイ・テクノロジー
+        </p>
 
-    <div class="hero-content">
-      <h1>小林栄太(eita.vue)</h1>
-      <p>研究とWeb開発をしています。</p>
-      <h2>エンジニアリング・研究</h2>
-      <ul class="text-xl">
-        <li>Web開発 / UI設計</li>
-        <li>神道学(教派神道)・教義研究</li>
-      </ul>
+        <h1 class="text-4xl xl:text-5xl font-bold
+                 leading-tight text-ink">
+          ちょうど良いぐらいの<br class="hidden sm:block">
+          テクノロジー。
+        </h1>
+
+        <p class="text-base leading-relaxed text-muted">
+          Web技術を中心に、オープンソースソフトウェアの
+          開発や創作活動に取り組む小さな団体です。
+        </p>
+
+        <div class="hero-actions flex flex-wrap gap-3">
+          <BaseButton to="/projects" arrow="right" class="hero-button">
+            プロジェクトを見る
+          </BaseButton>
+
+          <BaseButton to="/about" arrow="none" class="hero-button hero-button--secondary">
+            私たちについて
+          </BaseButton>
+        </div>
+      </div>
+
+      <TopHeroAside />
     </div>
-  </section>
+  </BaseContainer>
 </template>
 
-<style lang="scss">
-.top-hero {
-  position: relative;
-
-  display: grid;
-  width: 100%;
-  min-height: clamp(28rem, 70svh, 46rem);
-  padding: 4rem 1.5rem;
-  place-items: center;
-
-  overflow: hidden;
-  isolation: isolate;
-  @apply text-neutral-100;
-
-  justify-items: start;
-  align-items: start;
+<style scoped lang="scss">
+.hero-actions .hero-button {
+  margin: 0;
+  padding: 0.75rem 1.25rem;
+  font-weight: 500;
 }
 
-.hero-background {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  filter: blur(5px);
-
-  overflow: hidden;
-
-  &::after {
-    position: absolute;
-    inset: 0;
-
-    content: '';
-  }
+.hero-actions .hero-button--secondary {
+  color: var(--color-secondary);
+  background: transparent;
+  border: 1px solid var(--border-main);
+  box-shadow: none;
 }
 
-.hero-image {
-  width: 100%;
-  height: 100%;
-  @apply my-0 mx-0;
-  object-fit: cover;
-  object-position: center 45%;
-  transform: scale(1.01);
-}
-
-.hero-content {
-  @apply m-auto text-white text-align-start py-8 px-12 max-md:px-6 shadow-main bg-neutral-900/30 rounded-lg;
-  line-height: 1.35;
-  text-wrap: balance;
-  position: relative;
-  paint-order: stroke;
-
-  h1 {
-    @apply mb-4 text-5xl font-bold line-height-none;
-  }
-
-  h2 {
-    @apply mt-6 mb-2 text-3xl font-bold line-height-none;
-  }
-
-  p {
-    @apply text-xl;
-    margin: 0;
-  }
+.hero-actions .hero-button--secondary:hover {
+  background: var(--bg-aside);
 }
 </style>

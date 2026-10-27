@@ -9,7 +9,7 @@ if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
-const description = page.value.description ?? '小林栄太(eita.vue)のリンク集'
+const description = page.value.description ?? 'ピタマイ・テクノロジー公式サイトのお知らせ'
 
 useSeoMeta({
   title: page.value.title,
@@ -26,7 +26,7 @@ defineOgImage('Main', {
 }, {
   width: 1200,
   height: 630,
-  alt: `${page.value.title} — 小林栄太のポートフォリオサイト`,
+  alt: `${page.value.title} - ピタマイ・テクノロジー公式サイト`,
 })
 </script>
 

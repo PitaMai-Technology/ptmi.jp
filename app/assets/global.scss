@@ -7,7 +7,9 @@
   --bg-page: #FAFBF8;
   --bg-aside: #F0F4EF;
   --bg-main: #E7EFE6;
-  --border-main: #DCE5DA;
+  --border-main: #3f7621;
+  --bg-footer: color-mix(in srgb, var(--color-secondary) 35%, #262626);
+  --bg-footer-contact: color-mix(in srgb, var(--color-primary) 18%, var(--bg-main));
 
   /* Link */
   --link-primary: #1570d4;
@@ -30,9 +32,9 @@
     monospace;
 
   /* テーブル */
-  --table-bg: transparent;
-  --table-heading-bg: rgb(0 0 0 / 0.04);
-  --table-row-alt: rgb(0 0 0 / 0.025);
+  --table-bg: #fff;
+  --table-heading-bg: var(--table-bg);
+  --table-row-alt: var(--table-bg);
   --border-primary: rgb(0 0 0 / 0.15);
   --text-muted: #737373;
 

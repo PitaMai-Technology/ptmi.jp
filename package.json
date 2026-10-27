@@ -9,18 +9,19 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "@nuxt/content": "^3.16.0",
-    "@nuxt/eslint": "^1.15.2",
+    "@nuxt/content": "^3.16.2",
+    "@nuxt/eslint": "^1.17.0",
     "@nuxt/fonts": "^0.14.0",
     "@nuxt/icon": "2.6.1",
     "@nuxt/image": "2.2.0",
     "@nuxt/scripts": "1.3.12",
     "@nuxthub/core": "^0.10.8",
     "@nuxtjs/seo": "5.3.16",
-    "@takumi-rs/core": "^2.14.0",
+    "@takumi-rs/core": "^2.15.2",
     "@vueuse/core": "^14.4.0",
     "@vueuse/nuxt": "14.4.0",
     "aws4fetch": "^1.0.20",
+<<<<<<< HEAD
     "better-sqlite3": "^13.0.0",
     "nuxt": "^4.5.2",
     "nuxt-og-image": "^6.8.0",
@@ -28,11 +29,21 @@
     "reka-ui": "^2.10.4",
     "vue": "^3.5.42",
     "vue-pdf-embed": "2.1.7"
+=======
+    "better-sqlite3": "^13.0.3",
+    "nuxt": "^4.6.1",
+    "nuxt-og-image": "^6.10.4",
+    "nuxt-studio": "1.7.0",
+    "reka-ui": "^2.11.0",
+    "vue": "^3.5.44",
+    "vue-pdf-embed": "2.1.6",
+    "vue3-carousel": "^0.19.0"
+>>>>>>> fbcf490 (feat(pages,docker): ページの基盤を追加、Dockerを追加)
   },
   "devDependencies": {
-    "@unocss/nuxt": "^66.8.1",
-    "sass-embedded": "^1.103.1",
-    "unocss": "^66.8.1"
+    "@unocss/nuxt": "^66.11.0",
+    "sass-embedded": "^1.105.1",
+    "unocss": "^66.11.0"
   },
   "packageManager": "pnpm@12.15.0"
 }

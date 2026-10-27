@@ -1,7 +1,7 @@
 <template>
   <BaseContainer>
     <div class="grid grid-cols-1 lg:grid-cols-2
-             items-center gap-10 py-8 lg:py-14">
+             items-center gap-15 py-8 lg:py-14">
       <div class="space-y-6">
         <p class="text-sm font-medium tracking-wider
                  text-secondary">
@@ -10,13 +10,11 @@
 
         <h1 class="text-4xl xl:text-5xl font-bold
                  leading-tight text-ink">
-          ちょうど良いぐらいの<br class="hidden sm:block">
-          テクノロジー。
+          なんか色々やってます
         </h1>
 
         <p class="text-base leading-relaxed text-muted">
-          Web技術を中心に、オープンソースソフトウェアの
-          開発や創作活動に取り組む小さな団体です。
+          Web技術を中心に、オープンソースソフトウェアの開発や創作活動に取り組む小さな団体です。
         </p>
 
         <div class="hero-actions flex flex-wrap gap-3">

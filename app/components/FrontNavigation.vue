@@ -22,15 +22,11 @@ type NavigationItem = {
 
 const navigationItems: NavigationItem[] = [
   { label: 'TOP', to: '/' },
-  { label: '私について', to: '/about' },
+  { label: '私たちについて', to: '/about' },
   {
-    label: '研究',
-    to: '/research',
-  },
-  {
-    label: 'エンジニア', to: '/engineering',
+    label: '活動', to: '/projects',
     children: [
-      { label: 'スライド', to: '/engineering/slides' },
+      { label: '出版(同人)', to: '/projects/books' },
     ],
   },
   { label: '問い合わせ', to: '/contact' },
@@ -45,8 +41,8 @@ const formatNavigationIndex = (index: number) => String(index + 1).padStart(2, '
       <li v-for="(item, index) in navigationItems" :key="item.to" class="border-b border-neutral-300">
         <CollapsibleRoot v-if="item.children?.length">
           <div class="submenu-heading">
-            <NuxtLink class="menu-link" :to="item.to"
-              :aria-current="route.path === item.to ? 'page' : undefined" @click="$emit('navigate')">
+            <NuxtLink class="menu-link" :to="item.to" :aria-current="route.path === item.to ? 'page' : undefined"
+              @click="$emit('navigate')">
               <span class="font-sans text-sm text-neutral-500" aria-hidden="true">
                 {{ formatNavigationIndex(index) }}
               </span>
@@ -70,8 +66,8 @@ const formatNavigationIndex = (index: number) => String(index + 1).padStart(2, '
           </CollapsibleContent>
         </CollapsibleRoot>
 
-        <NuxtLink v-else class="menu-link" :to="item.to"
-          :aria-current="route.path === item.to ? 'page' : undefined" @click="$emit('navigate')">
+        <NuxtLink v-else class="menu-link" :to="item.to" :aria-current="route.path === item.to ? 'page' : undefined"
+          @click="$emit('navigate')">
           <span class="font-sans text-sm text-neutral-500" aria-hidden="true">
             {{ formatNavigationIndex(index) }}
           </span>
@@ -232,6 +228,7 @@ const formatNavigationIndex = (index: number) => String(index + 1).padStart(2, '
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .menu-link::after,
   .submenu-content,
   .submenu-icon {

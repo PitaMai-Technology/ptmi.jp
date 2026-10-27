@@ -29,8 +29,7 @@ watch(isDesktop, (value) => {
   <aside class="site-header">
     <div class="header-inner mx-auto flex py-4 max-w-6xl max-lg:flex-row-reverse items-center justify-between px-6">
       <NuxtLink class="site-name" to="/">
-        <NuxtImg src="/logo.svg" alt="PitaMai Technology" class="h-14 w-14" />
-        <span class="text-sm text-neutral-700">PitaMai Technology</span>
+        <NuxtImg class="max-lg:h-8 max-lg:w-full" src="/logo.png" alt="PitaMai Technology／ピタマイ・テクノロジー ロゴ" />
       </NuxtLink>
 
       <DialogRoot v-if="!isDesktop" v-model:open="isOpen">
@@ -66,7 +65,8 @@ watch(isDesktop, (value) => {
 
 <style scoped lang="scss">
 .site-header {
-  @apply inset-x-0 top-0 bg-bgAside;
+  @apply inset-x-0 top-0;
+  background-color: color-mix(in srgb, var(--bg-aside) 85%, transparent);
   border-block-end: 3px solid var(--border-main);
 }
 
@@ -214,7 +214,7 @@ watch(isDesktop, (value) => {
     height: 100dvh;
     overflow-y: auto;
     border-block-end: 0;
-    border-inline-end: 3px solid var(--border-main);
+    border-inline-end: 2px solid var(--border-main);
   }
 
   .header-inner {

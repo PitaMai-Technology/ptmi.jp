@@ -8,10 +8,7 @@ title: About file
 技術と創作を通じて、さまざまなものづくりに取り組んでいます。
 ::
 
-::base-container
----
-mode: media-text
----
+::base-container{mode="media-text"}
 ピタマイ・テクノロジー（PitaMai Technology）は、情報技術を中心に、ソフトウェア開発、研究、創作、出版などに取り組む小規模な任意団体です。
 
 構成員それぞれの興味や発想を大切にし、個人や小さなチームによる自主的な活動を通じて、さまざまなものづくりに取り組んでいます。
@@ -22,11 +19,7 @@ mode: media-text
 ## 私たちについて
 ::
 
-::base-container
----
-mediaPosition: right
-mode: media-text
----
+::base-container{mode="media-text" media-position="right"}
 作る → 試す → 共有する → 必要なら一緒に育てる
 
 これが、私たちの活動の基本的な考え方です。
@@ -47,12 +40,19 @@ mode: media-text
 ## 団体概要
 
 | 項目       | 内容                                 |
-| :------- | :--------------------------------- |
+| -------- | ---------------------------------- |
 | 正式名称     | 任意団体ピタマイ・テクノロジー                    |
 | 正式名称（英語） | Club PitaMai Technology            |
 | 形態       | 任意団体（サークル）                         |
 | 活動形態     | バーチャルチーム                           |
 | 創業日      | 令和7年3月19日                          |
 | 所在地      | 埼玉県川口市（役員会が定めた場所）※活動は完全リモートで行っています |
-| 役員       | 代表：小林 栄太                           |
+| 代表者      | 代表役員：小林 栄太                         |
+::
+
+::base-container
+## 各種規約
+
+- [団体規約（定款）](https://outline-wiki.pitamai.com/s/8d9b13cf-7609-4db8-acab-553959ee9cfb/doc/44ou44k44oe44kk44o744og44kv44oo44ot44k444o8iombiwwtuimje0hcao5a6a5qykq-RWrQASmHWK)
+- [プライバシーポリシー](https://outline-wiki.pitamai.com/s/8d9b13cf-7609-4db8-acab-553959ee9cfb/doc/5ycl5lq65oof5acx5ld6k235pa56yedioodloocvodnuocpooduodhuocrodjuodreocuoodva-rFgXpKyail)
 ::

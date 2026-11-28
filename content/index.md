@@ -6,7 +6,7 @@ loc: /
 ::top-hero
 ::
 
-::base-container{mode="media-text" mediaPosition="left"}
+::base-container{mode="media-text" media-position="left"}
 私たちは、Web技術を中心に、さまざまなものづくりを楽しむ小さな団体です。
 
 オープンソースソフトウェアの開発から文章・出版物の制作まで、それぞれの興味やアイデアを形にする活動を行っています。
@@ -19,7 +19,7 @@ loc: /
 ## 活動・プロジェクト
 
   :::base-carousel{auto-slides desktop-items-to-show="1" items-to-show="1"}
-    ::::project-card{image="/hero2.png" imageFit="contain"}
+    ::::project-card{image="/hero2.png" image-fit="contain"}
     #title
     出版・創作活動
     

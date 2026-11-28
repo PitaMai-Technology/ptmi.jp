@@ -13,7 +13,7 @@ const props = defineProps({
   <!-- Gridで中央に配置 -->
   <div>
     <header class="text-center p-8">
-      <h1 class="text-3xl font-bold mb-6">Eita.vueのポートフォリオ</h1>
+      <h1 class="text-3xl font-bold mb-6">ピタマイ・テクノロジー公式サイト エラー画面</h1>
     </header>
     <div class="max-w-3xl min-h-[60svh] mx-auto p-4 grid place-items-center">
       <main>

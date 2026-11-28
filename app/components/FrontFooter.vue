@@ -21,7 +21,7 @@ const currentYear = new Date().getFullYear()
     <section class="contact-band" aria-labelledby="footer-contact-title">
       <div class="footer-inner contact-content">
         <h2 id="footer-contact-title">
-          研究・その他のお問い合わせについて
+          お問い合わせについて
         </h2>
         <p>お問い合わせは、コンタクトページからお気軽にご連絡ください。</p>
 
@@ -37,7 +37,7 @@ const currentYear = new Date().getFullYear()
         <NuxtLink class="footer-brand" to="/">
           <NuxtImg src="/logo.png" alt="PitaMaiロゴ" />
         </NuxtLink>
-        <p>神道学の研究と、Vue.js／Nuxtを中心としたWeb開発をしています。</p>
+        <p>任意団体ピタマイ・テクノロジー</p>
       </div>
     </section>
     <div class="copyright-band">
@@ -118,7 +118,7 @@ const currentYear = new Date().getFullYear()
 .copyright-band {
   color: var(--bg-page);
   background: color-mix(in srgb, var(--bg-footer) 90%, transparent);
-  border-block-start: 1px solid color-mix(in srgb, var(--border-main) 18%, transparent);
+  border-block-start: 2px solid #fff;
 }
 
 .copyright-content .footer-top-button {

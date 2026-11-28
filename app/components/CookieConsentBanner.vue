@@ -144,13 +144,21 @@ onMounted(() => {
 
 <style scoped lang="scss">
 .consent-banner {
-  @apply bg-green-200/80 text-gray-900;
-  inset-inline: 0;
-  inset-block-end: 0;
+  @apply bg-green-200/75 text-gray-900;
 
+  position: fixed;
+  z-index: 60;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  box-sizing: border-box;
+  width: 26rem;
+  max-width: calc(100% - max(1rem, env(safe-area-inset-left)) - max(1rem, env(safe-area-inset-right)));
+  max-height: calc(100dvh - max(1rem, env(safe-area-inset-top)) - max(1rem, env(safe-area-inset-bottom)));
+  overflow: auto;
   padding: 1rem;
-  border-block-start: 1px solid rgb(255 255 255 / 0.22);
-  box-shadow: 0 -8px 32px rgb(0 0 0 / 0.22);
+  border: 1px solid rgb(0 0 0 / 0.12);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgb(0 0 0 / 0.22);
 }
 
 .consent-banner-enter-active,
@@ -167,13 +175,7 @@ onMounted(() => {
 }
 
 .consent-banner__inner {
-  @apply mx-auto grid max-w-6xl items-end gap-6;
-
-  grid-template-columns: minmax(0, 1fr) auto;
-}
-
-.consent-banner__body {
-  max-width: 48rem;
+  @apply grid gap-4;
 }
 
 .consent-banner__eyebrow {
@@ -199,11 +201,13 @@ onMounted(() => {
 }
 
 .consent-banner__actions {
-  @apply grid min-w-58 gap-2;
+  @apply grid gap-2;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .consent-button {
-  @apply w-full cursor-pointer border border-solid px-5 py-2.5 text-sm font-bold;
+  @apply w-full cursor-pointer rounded-md border border-solid px-3 py-2.5 text-sm font-bold;
 
   min-height: 2.75rem;
   transition:
@@ -223,6 +227,7 @@ onMounted(() => {
 }
 
 .consent-button--close {
+  grid-column: 1 / -1;
   background: transparent;
   border-color: transparent;
   text-decoration: underline;
@@ -234,33 +239,9 @@ onMounted(() => {
   transition: 300ms ease;
 }
 
-@media (max-width: 760px) {
-  .consent-banner__inner {
-    grid-template-columns: 1fr;
-  }
-
-  .consent-banner__actions {
-    @apply min-w-0;
-
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .consent-button--close {
-    grid-column: 1 / -1;
-  }
-}
-
-@media (max-width: 480px) {
-  .consent-banner {
-    padding: 1rem 1.25rem;
-  }
-
+@media (max-width: 360px) {
   .consent-banner__actions {
     grid-template-columns: 1fr;
-  }
-
-  .consent-button--close {
-    grid-column: auto;
   }
 }
 

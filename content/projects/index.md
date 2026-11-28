@@ -28,10 +28,10 @@ title: Projects root file
       ---
       align: start
       arrow: external
+      to: https://github.com/PitaMai-Technology
       label: GitHubへ行くリンク
       target: _blank
       text: GitHubを見る
-      to: https://github.com/PitaMai-Technology
       ---
       :::::
     ::::
@@ -44,10 +44,10 @@ title: Projects root file
     創作活動
 
     #description
-    エッセイなど、さまざまなテーマの同人誌を制作・発行しています。
+    エッセイなど、さまざまなテーマの同人誌を制作・発行予定です。
 
     #actions
-      :::::base-button{align="center" arrow="down"}
+      :::::base-button{align="center" arrow="down" to="#制作物"}
       詳しく見る
       :::::
 
@@ -64,19 +64,15 @@ title: Projects root file
 ::base-container
 ## 制作物
 
-  :::project-grid{columns="2" gap="small"}
-    ::::base-card
-    ---
-    arrow: external
-    mode: divided
-    ---
+  :::project-grid{columns="1" gap="small"}
+    ::::base-card{arrow="external" mode="divided"}
     Lism CSSベースのVue.js向けラッパー兼UIライブラリ
-
+    
     Nuxtモジュールもあり、自動インポートなど相性バツグン
-
+    
     #title
     ### LismUI-Vue
-
+    
     #footer
     ```bash
     npm i lism-ui-vue
